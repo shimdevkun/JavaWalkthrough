@@ -5,7 +5,7 @@ public class Sequences
     public static void main( String[] args )
     {
         // TODO: Uncomment the line below when done (and comment all code above if any)
-        //testMethods();
+        testMethods();
     }
 
     /*
@@ -19,6 +19,8 @@ public class Sequences
     */
     public static void printOddNumbers() {
         // TODO: Implement this method to match the description above
+        for (int i = 1; i < 10; i+=2)
+            System.out.println(i);
     }
 
     /*
@@ -34,6 +36,9 @@ public class Sequences
     */
     public static void printMultiplesOf2And3() {
         // TODO: Implement this method to match the description above
+        for (int i = 1; i <= 30; i++)
+            if (i % 2 == 0 && i % 3 == 0)
+                System.out.println(i);
     }
 
 
@@ -43,6 +48,9 @@ public class Sequences
     */
     public static void printLine() {
         // TODO: Implement this method to match the description above
+        for (int i = 0; i < 10; i++) {
+            System.out.print("*");
+        }
     }
 
     /*
@@ -52,6 +60,10 @@ public class Sequences
      */
     public static void printLineComplex() {
         // TODO: Implement this method to match the description above
+        for (int i = 0; i < 10; i++) {
+            if (i % 2 == 0) System.out.print("*");
+            else System.out.print("-");
+        }
     }
 
     /*
@@ -62,6 +74,16 @@ public class Sequences
     */
     public static void printRectangle() {
         // TODO: Implement this method to match the description above
+        for (int i = 0; i < 3; i++)
+            System.out.print("*");
+        System.out.println();
+
+        System.out.print("*");
+        System.out.print(" ");
+        System.out.println("*");
+
+        for (int i = 0; i < 3; i++)
+            System.out.print("*");
     }
 
     /*
@@ -76,6 +98,20 @@ public class Sequences
      */
     public static void printRectangleComplex(int length) {
         // TODO: Implement this method to match the description above
+        for (int i = 0; i < length; i++)
+            System.out.print("*");
+        System.out.println();
+
+
+        for (int i = 0; i < length - 2; i++) {
+            System.out.print("*");
+            for (int j = 0; j < length - 2; j++)
+                System.out.print(" ");
+            System.out.println("*");
+        }
+
+        for (int i = 0; i < length; i++)
+            System.out.print("*");
     }
 
     /*
@@ -87,6 +123,20 @@ public class Sequences
     */
     public static void printTriangle() {
         // TODO: Implement this method to match the description above
+        int height = 3;
+        int stars = 1;
+
+        for (int i = 0; i < height; i++, stars += 2) {
+            for (int j = 0; j < height - i; j++)
+                System.out.print(" ");
+
+            for (int j = 0; j < stars; j++)
+                System.out.print("*");
+
+            for (int j = 0; j < height - i; j++)
+                System.out.print(" ");
+            System.out.println();
+        }
     }
 
 
