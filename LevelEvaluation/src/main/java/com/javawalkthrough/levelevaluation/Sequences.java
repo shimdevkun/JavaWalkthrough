@@ -9,7 +9,7 @@ public class Sequences
     }
 
     /*
-    * This method prints the first 5 odd numbers using a loop.
+    * This method prints all odd numbers from 0 to 10 using a loop.
     * Output:
     * 1
     * 3
