@@ -12,7 +12,7 @@ public class StoreApp {
      * This method allows a user named Mikes to add products to his cart
      * The text after * should be displayed in the console
      * The text surrounded by -- is an example of a user input
-     * You must complete the todos in the Store class first
+     * You must complete the todos in the Cart and Store class first
      * You must use the Store class
      */
     public static void main(String[] args) {
