@@ -5,10 +5,15 @@ import java.util.Scanner;
 
 public class Register {
     /*
+     * -------------- DO NOT EDIT ANY OF THE CODE PROVIDED --------------
+     *
      * This method prints info provided by a user about themselves
      * The text after * should be displayed in the console
      * The text surrounded by -- is an example of a user input
-     * You have to use the Person class and its toString method
+     * You must complete the todos in the Person class first
+     * You must use the Person class with its toString method
+     *
+     * --- Feel free to create any variables that you consider a must ---
      */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -24,9 +29,12 @@ public class Register {
         // -- United States --
 
         // * What languages do you speak?
-        // -- English, French, Japanese --
+        // -- English French Japanese --
 
-        // * Hey there! My name is Max. I am from the United States and I am 25 years old.
+        System.out.println();
+
+        // * Hey there! My name is Max.
+        // * I am from the United States and I am 25 years old.
         // * I speak the following languages: English, French, Japanese.
     }
 }

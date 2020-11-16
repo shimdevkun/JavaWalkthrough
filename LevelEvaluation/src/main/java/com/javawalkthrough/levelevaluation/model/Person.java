@@ -2,12 +2,34 @@ package com.javawalkthrough.levelevaluation.model;
 
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
+/*
+* This class represents a person's entity. It contains their name, age,
+* country and the languages they speak. The toString() method prints
+* how they would introduce themselves.
+*/
 public class Person {
     private String name;
+    private int age;
     private String country;
     private String[] languages;
-    private int age;
 
+    // TODO: Implement a getter for the person's name
+    /*
+    * This getter returns the person's name
+    */
+
+    // TODO: Implement a getter for the person's age
+    /*
+     * This getter returns the person's age
+     */
+
+    // TODO: Implement a getter for the person's country
+    /*
+     * This getter returns the person's country
+     */
+
+
+    // TODO: Implement a constructor with a name as parameter
     /*
     * This constructor takes a name and initializes
     * the other fields with the following data:
@@ -17,6 +39,7 @@ public class Person {
     */
 
 
+    // TODO: Implement a constructor with parameters for each field
     /*
     * This constructor takes data for all fields.
     */
@@ -28,7 +51,8 @@ public class Person {
     * Output: French, Spanish, Italian, Japanese
     */
     private String listLanguages(){
-        throw new NotImplementedException();
+        // TODO: Implement the following method to match the description above
+        throw new NotImplementedException(); // comment this line when the implementation is done
     }
 
     @Override
