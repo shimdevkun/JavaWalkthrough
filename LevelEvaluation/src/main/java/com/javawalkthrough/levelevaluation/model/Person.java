@@ -17,16 +17,19 @@ public class Person {
     /*
     * This getter returns the person's name
     */
+    public String getName() { return this.name; }
 
     // TODO: Implement a getter for the person's age
     /*
      * This getter returns the person's age
      */
+    public int getAge() { return this.age; }
 
     // TODO: Implement a getter for the person's country
     /*
      * This getter returns the person's country
      */
+    public String getCountry() { return this.country; }
 
 
     // TODO: Implement a constructor with a name as parameter
@@ -37,12 +40,23 @@ public class Person {
     * country: "Canada"
     * languages: { "English", "French" }
     */
-
+    public Person(String name) {
+        this.name = name;
+        this.age = 25;
+        this.country = "Canada";
+        this.languages = new String[]{ "English", "French" };
+    }
 
     // TODO: Implement a constructor with parameters for each field
     /*
     * This constructor takes data for all fields.
     */
+    public Person(String name, int age, String country, String[] languages) {
+        this.name = name;
+        this.age = age;
+        this.country = country;
+        this.languages = languages;
+    }
 
 
     /*
@@ -52,7 +66,14 @@ public class Person {
     */
     private String listLanguages(){
         // TODO: Implement the following method to match the description above
-        throw new NotImplementedException(); // comment this line when the implementation is done
+        String message = "";
+        int length = languages.length;
+        for (int i = 0; i < length - 1; i++)
+            message += languages[i] + ", ";
+        message += languages[length - 1];
+
+        return message;
+        //throw new NotImplementedException(); // comment this line when the implementation is done
     }
 
     @Override

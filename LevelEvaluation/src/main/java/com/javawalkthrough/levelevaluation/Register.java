@@ -21,20 +21,30 @@ public class Register {
 
         // * Hello, please enter your name:
         // -- Max --
+        System.out.println("Hello, please enter your name:");
+        String name = scanner.nextLine();
 
         // * How old are you?
         // -- 25 --
+        System.out.println("How old are you?");
+        String age = scanner.nextLine();
 
         // * Where are you from?
         // -- United States --
+        System.out.println("Where are you from?");
+        String country = scanner.nextLine();
 
         // * What languages do you speak?
         // -- English French Japanese --
+        System.out.println("What languages do you speak?");
+        String[] languages = scanner.nextLine().split(" ");
 
         System.out.println();
 
         // * Hey there! My name is Max.
         // * I am from the United States and I am 25 years old.
         // * I speak the following languages: English, French, Japanese.
+        person = new Person(name, Integer.parseInt(age), country, languages);
+        System.out.println(person.toString());
     }
 }

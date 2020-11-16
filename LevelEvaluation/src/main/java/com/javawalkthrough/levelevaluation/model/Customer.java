@@ -7,6 +7,6 @@ public class Customer extends Person {
 
     public Customer(String name) {
         // TODO: Uncomment the line below once the first Person constructor is set
-        //super(name);
+        super(name);
     }
 }
