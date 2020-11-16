@@ -2,6 +2,8 @@ package com.javawalkthrough.levelevaluation.model;
 
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
+import java.util.Arrays;
+
 public class Store {
     private Product[] products;
     public Product[] getProducts(){
@@ -22,6 +24,10 @@ public class Store {
     */
     public void displayProducts() {
         // TODO: Implement this method to match the description above
+        for (int i = 0; i < products.length; i++) {
+            String productInfo = String.format("%d %s %.2f", i+1, products[i].getName(), products[i].getPrice());
+            System.out.println(productInfo);
+        }
     }
 
     /*
@@ -33,7 +39,12 @@ public class Store {
      */
     public boolean isProductInCart(int index, Cart cart) {
         // TODO: Implement this method to match the description above
-        throw new NotImplementedException();
+        Product product = products[index];
+        for (int i = 0; i < cart.count; i++)
+            if (cart.products[i].getName().equals(product.getName()))
+                return true;
+        return false;
+        //throw new NotImplementedException();
     }
 
     // ----------------------------------------------

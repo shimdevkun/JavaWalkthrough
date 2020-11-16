@@ -20,7 +20,9 @@ public class Cart {
     */
     public Cart(int length)
     {
-
+        this.products = new Product[length];
+        this.total = 0.00;
+        this.count = 0;
     }
 
     /*
@@ -29,5 +31,7 @@ public class Cart {
     * It also increments the count value by 1
     */
     public void addProduct(Product product) {
+        this.products[count++] = product;
+        this.total += product.getPrice();
     }
 }
